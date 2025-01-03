@@ -1,0 +1,72 @@
+/* App.css */
+.app {
+  
+  background-image: url('./styles/bg.jpg');
+  background-size: cover;
+  background-position: top;
+
+}
+
+
+
+
+
+.main-content {
+  position: relative;
+  min-height: 100vh;
+  background-color: rgba(190, 189, 189, 0.8); /* White color with some opacity */
+
+ padding: 2rem;
+}
+
+/* Reset default styles */
+* {
+
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.main-content > * {
+  animation: fadeIn 0.5s ease-out;
+}
+/* Existing styles remain the same */
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .main-content {
+    padding: 1rem;
+  }
+
+  .header nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header nav ul li {
+    margin: 0.5rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-content {
+
+    padding: 0.5rem;
+  }
+
+  .header nav ul {
+    font-size: 0.9rem;
+  }
+}

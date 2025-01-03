@@ -1,0 +1,204 @@
+/* src/styles/TransactionList.css */
+.transaction-list {
+  padding: 2rem;
+}
+
+.transaction-list h2 {
+  color: #1a237e;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.filters {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.filters select,
+.filters input {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  width: 200px;
+}
+
+.transactions {
+  display: flex;
+  flex-direction: column; /* Change to column for vertical list */
+  gap: 1rem;
+}
+
+.transaction-item {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.transaction-item:hover {
+  transform: translateX(5px);
+}
+
+.transaction-item.income {
+  border-left: 4px solid #4caf50;
+}
+
+.transaction-item.expense {
+  border-left: 4px solid #f44336;
+}
+
+.transaction-info h3 {
+  margin: 0;
+  color: #333;
+}
+
+.transaction-info .amount {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+.income .amount {
+  color: #4caf50;
+}
+
+.expense .amount {
+  color: #f44336;
+}
+
+.transaction-info .details {
+  color: #666;
+  font-size: 0.9rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.transaction-info .notes {
+  color: #666;
+  font-size: 0.9rem;
+  font-style: italic;
+  margin: 0.5rem 0 0 0;
+}
+
+.actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.actions button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.actions button:first-child {
+  background-color: #ffebee;
+  color: #c62828;
+}
+
+.actions button:last-child {
+  background-color: #e3f2fd;
+  color: #1565c0;
+}
+
+.actions button:hover {
+  opacity: 0.8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .filters {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .filters select,
+  .filters input {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .transactions {
+    /* No change needed, stays as column */
+  }
+
+  .transaction-item {
+    flex-direction: column;
+  }
+}
+
+/* EditTransaction.css */
+.edit-transaction-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.edit-transaction {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 600px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.edit-transaction h2 {
+  color: #1a237e;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.edit-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.save-btn,
+.cancel-btn {
+  flex: 1;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.save-btn {
+  background-color: #4caf50;
+  color: white;
+}
+
+.save-btn:hover {
+  background-color: #388e3c;
+}
+
+.cancel-btn {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.cancel-btn:hover {
+  background-color: #e0e0e0;
+}
