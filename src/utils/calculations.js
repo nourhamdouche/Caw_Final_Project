@@ -1,4 +1,3 @@
-// Utility functions for financial calculations
 export const calculateTotalIncome = (transactions) => {
     return transactions
       .filter(t => t.type === 'income')
