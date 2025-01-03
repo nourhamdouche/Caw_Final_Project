@@ -1,4 +1,3 @@
-/* Header.css */
 .header {
   background: linear-gradient(135deg, #1a237e, #0d47a1);
   padding: 1rem;
@@ -21,13 +20,11 @@
 }
 
 
-/* Existing styles remain the same */
-
 .nav-menu {
   display: flex;
   justify-content: center;
   gap: 1rem;
-  flex-wrap: wrap; /* Adjust for smaller screens */
+  flex-wrap: wrap; 
 }
 
 .nav-item {
@@ -39,7 +36,7 @@
   font-size: 1rem;
   position: relative;
   transition: all 0.3s ease;
-  text-decoration: none; /* Remove underline for NavLink */
+  text-decoration: none; 
 }
 
 .nav-item::after {
@@ -62,7 +59,6 @@
   font-weight: bold;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .nav-menu {
     flex-direction: column;
