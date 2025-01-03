@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaWallet } from 'react-icons/fa'; 
-import { NavLink } from 'react-router-dom'; // Import NavLink
+import { NavLink } from 'react-router-dom'; 
 import '../styles/Header.css';
 
 function Header() {
