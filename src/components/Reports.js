@@ -15,7 +15,6 @@ ChartJS.register(
 );
 
 function Reports({ transactions }) {
-  // Calculate monthly totals
   const monthlyData = transactions.reduce((acc, t) => {
     const month = t.date.substring(0, 7);
     if (!acc[month]) {
@@ -29,7 +28,6 @@ function Reports({ transactions }) {
     return acc;
   }, {});
 
-  // Calculate category totals
   const categoryData = transactions
     .filter(t => t.type === 'expense')
     .reduce((acc, t) => {
@@ -37,7 +35,6 @@ function Reports({ transactions }) {
       return acc;
     }, {});
 
-  // Prepare data for pie chart
   const pieData = {
     labels: Object.keys(categoryData),
     datasets: [{
@@ -49,7 +46,6 @@ function Reports({ transactions }) {
     }]
   };
 
-  // Prepare data for bar chart
   const months = Object.keys(monthlyData).sort();
   const barData = {
     labels: months,
