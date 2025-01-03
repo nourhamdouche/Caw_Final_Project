@@ -3,7 +3,7 @@
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
-  flex-direction: column; /* Stack title on top */
+  flex-direction: column; 
   align-items: center;
 }
 
@@ -20,30 +20,27 @@
   padding: 1.5rem;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  margin-bottom: 0; /* Remove margin for consistent alignment */
-  width: 48%; /* Half width for each chart */
-  transition: transform 0.3s ease; /* Add transition for hover animation */
+  margin-bottom: 0; 
+  width: 48%; 
+  transition: transform 0.3s ease; 
 }
 
-/* Hover Animation for Chart Containers */
 .chart-container:hover {
-  transform: scale(1.05); /* Slight scale-up effect on hover */
+  transform: scale(1.05);
 }
 
-/* Flexbox for Row Layout of Charts */
 .chart-row {
   display: flex;
   justify-content: space-between;
   gap: 2rem;
-  width: 100%; /* Ensure full width for the row */
+  width: 100%; 
 }
 
-/* Bar Chart Styles */
 .bar-chart {
   display: flex;
   align-items: flex-end;
   gap: 1rem;
-  height: 200px; /* Make the bar chart shorter */
+  height: 200px;
   padding: 1rem;
   overflow-x: auto;
 }
@@ -68,7 +65,7 @@
 }
 
 .bar {
-  width: 25px; /* Reduce the width of the bars */
+  width: 25px; 
   position: relative;
   transition: height 0.3s ease;
 }
@@ -100,9 +97,8 @@
   white-space: nowrap;
 }
 
-/* Pie Chart Styles */
 .pie-chart {
-  width: 200px; /* Make the pie chart smaller */
+  width: 200px; 
   height: 200px;
   margin: 0 auto;
   position: relative;
@@ -137,10 +133,9 @@
   transform: translateY(-50%);
 }
 
-/* Responsive Layout */
 @media (max-width: 1200px) {
   .chart-row {
-    flex-direction: column; /* Stack the charts vertically on smaller screens */
+    flex-direction: column; 
     gap: 1rem;
   }
 
