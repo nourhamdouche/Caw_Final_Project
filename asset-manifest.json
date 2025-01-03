@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Caw_Final_Project/static/css/main.de054adf.css",
+    "main.js": "/Caw_Final_Project/static/js/main.2a7d7b68.js",
+    "static/media/bg.jpg": "/Caw_Final_Project/static/media/bg.8525a74fead8c8b3bfcc.jpg",
+    "index.html": "/Caw_Final_Project/index.html",
+    "main.de054adf.css.map": "/Caw_Final_Project/static/css/main.de054adf.css.map",
+    "main.2a7d7b68.js.map": "/Caw_Final_Project/static/js/main.2a7d7b68.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.de054adf.css",
+    "static/js/main.2a7d7b68.js"
+  ]
+}
